@@ -16,7 +16,7 @@ try { notify = require('./sendNotify'); } catch (e) {
 }
 
 // ========= 配置 =========
-const ENV_NAME = 'SGS_TOKENS';
+const ENV_NAME = process.env.SGS_TOKENS || 'SGS_TOKENS'
 const DEFAULT_CLIENT_ID = 'f6ec8ffe-3f4c-43e1-8d24-9021af8c6886';
 
 const CONFIG = {
