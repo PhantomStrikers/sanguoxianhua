@@ -78,7 +78,7 @@ async function retryable(fn, opts = {}) {
 
 // ========= 账号管理 =========
 function getAccountsFromEnv() {
-  const envValue = (process.env[ENV_NAME] || '').trim();
+  const envValue = (process.env.SGS_TOKENS || '').trim();
   if (!envValue) {
     log('error', `请配置环境变量 ${ENV_NAME}`);
     log('info', `格式: 备注+++token+++clientId`);
