@@ -20,7 +20,7 @@ jobs:
           cache: 'npm'                 # 利用缓存加速依赖安装
 
       - name: Install dependencies
-        run: npm ci                     # 如果使用 package-lock.json，推荐 npm ci
+        run: npm install                     # 如果使用 package-lock.json，推荐 npm ci
 
       - name: Run sanguosha script
         env:
