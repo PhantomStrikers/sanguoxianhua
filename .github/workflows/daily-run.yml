@@ -3,7 +3,7 @@ name: Daily Sanguosha Task
 on:
   schedule:
     # 每天 UTC 时间 0 点运行（对应北京时间 8 点，如需北京时间 0 点请改为 '0 16 * * *'）
-    - cron: '0 22 * * *'
+    - cron: '30 21 * * *'
   workflow_dispatch:   # 允许手动触发，方便测试
 
 jobs:
