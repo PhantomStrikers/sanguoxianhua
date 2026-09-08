@@ -2,7 +2,7 @@ name: Daily Sanguosha Task
 
 on:
   schedule:
-    - cron: '0 5 * * *'
+    - cron: '0 4 * * *'
       timezone: 'Asia/Shanghai'
   workflow_dispatch:   # 允许手动触发，方便测试
 
